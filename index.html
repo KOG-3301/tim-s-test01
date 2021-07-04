@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- v下一行 網頁的編碼-->
+        <!--<meta charset="UTF-8"></meta>=<meta charset="UTF-8"/><-->
+        <meta charset="UTF-8"/>
+        <title>獄雨的網頁</title>
+    </head>
+    <body>
+        <!--我是註解-->
+        <h1>hello 我是獄雨</h1>
+        <h2>第一篇文章</h2>
+        <h3>你好 我是網頁初學者</h3>
+        <p>今天學習<i><b> "輸入" "分行" "分線" "字體改變:斜體 粗體" "放置 連結 & 圖片"</b></i></p>
+        <!--中間想換可以使用<br></br> or </br>-->
+        <!--<br></br>:分行較大 or <br/>:分行較小-->
+        <br/>
+        <!--中間隔開水平線 可以使用<hr></hr>-->
+        <!--<hr></hr>:分行較大 or <hr/>:分行較小-->
+        <hr>
+        <h2>第二篇文章</h2>
+        <h3>這是我第一個目標 中間空一行 和中間有分線</h3>
+        <h2>第二篇文章</h2>
+        <h3>這是我第一個目標 中間空一行 和中間有分線</h3>
+        <br/>
+        <hr>
+        <h2>第三篇文章</h2>
+        <h3>這是我第二個目標 連結 & 圖片</h3>
+        <!--<a></a>:可以連接到指定連結的網頁 或者特定資料夾的圖片 or 網頁-->
+        <a href="https://www.google.com/?hl=zh-tw">google網站</a>
+        <a href="https://drive.google.com/?tab=ro&authuser=0">google雲端</a>
+        <a href="https://docs.google.com/drawings/create?hl=zh-TW">google繪圖</a>
+        <br/>
+        <a href="page2.html">第二頁(同資料夾)</a>
+        <a href="dir/page3.html">第三頁(不同資料夾)</a>
+        <a href="img/Rushia.2.0.01.jpg">露西亞poke poke</a>
+        <br/>
+        <!--<img>:會放入一張圖片在網頁上 -->
+        <!--如果不需要強制改圖片大小 可以只輸入一邊的邊長 則圖片不會變形-->
+        <img src="img/Rushia01.jpg" width="200" />
+        <img src="https://i.imgur.com/jxkTnOI.jpeg"  width="200" height="356"/>
+        <br/>
+        <!--<video>:會放入一部影片在網頁上 -->
+        <!--如果不需要強制改影片大小 可以只輸入一邊的邊長 則影片不會變形-->
+        <p>嵌入式系統_樹梅派防盜攝影機</p>
+        <video src="C:\Users\USER\Desktop\HomeWork\嵌入式系統\資工二A_江冠霆_108B37287_期末報告\嵌入式系統_防盜攝影機.mp4" controls width="400">影片無法撥放!!</video>
+        <!--想要使用yt影片可以到此影片的分享-嵌入 使用該連結-->
+        <p>開掛的小廢物</p>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/1Ag-fJs4ubA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/>
+        <hr>
+        <h2>第三篇文章</h2>
+        <h3>這是我第三個目標 列表 & 表格</h3>
+        <!--https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ-->
+        <!--<ul><ul/> & <ol><ol/>:排序-->
+        <!--<ul><ul/>:非數字排序-->
+        <ul style="color: darkorange;">
+            <li>google</li>
+            <li>youtube</li>
+            <li>露西亞</li>
+        </ul>
+        <!--<ol><ol/>:數字排序-->
+        <!--想要跟改樣式可以使用type-->
+        <ol type="i" style="color: darkorange;">
+            <li>google</li>
+            <li>youtube</li>
+            <li>露西亞</li>
+        </ol>
+        <!--<table></table>:表格-->
+        <table width="400" style="color: aquamarine;background-color: black;" >
+            <tr>
+                <td>偶像</td>
+                <td>人設</td>
+                <td>訂閱數</td>
+            </tr>
+            <tr>
+                <td>露西亞</td>
+                <td>可愛的病嬌</td>
+                <td>125萬</td>
+            </tr>
+        </table>
+        <br/>
+        <hr>
+        <h2>第四篇文章</h2>
+        <h3>這是我第四個目標 HTML的容器 div & span</h3>
+        <!--<div></div>:方便最網頁的美化和排版且方便使用CSS-->
+        <!--可以只用一行程式碼改變全部的樣式-->
+        <div style="color: darkorange;">
+            <ul>
+                <li>google</li>
+                <li>youtube</li>
+                <li>露西亞</li>
+            </ul>
+            <ol type="i"   >
+                <li>google</li>
+                <li>youtube</li>
+                <li>露西亞</li>
+            </ol>
+            <table width="400" style="color: aquamarine;background-color: black;">
+                <tr>
+                    <td>偶像</td>
+                    <td>人設</td>
+                    <td>訂閱數</td>
+                </tr>
+                <tr>
+                    <td>露西亞</td>
+                    <td>可愛的病嬌</td>
+                    <td>125萬</td>
+                </tr>
+            </table>
+        </div>
+        <!--測試範例 <div></div>和<span></span>的差異-->
+        <a href="img/Rushia.2.0.01.jpg">露西亞poke poke</a>
+        <a href="img/Rushia.2.0.01.jpg">你不要命了....</a>
+        <br/>
+        <p>露西亞</p>
+        <p>最可愛~~~~</p>
+        <!--<span></span>:空間有多少占多少 <div></div>:不管寬度占一整行-->
+        <span>露西亞</span>
+        <span>最可愛~~~~</span>
+        <div>露西亞</div>
+        <div>最可愛~~~~</div>
+        <!--HTML樹入標籤-->
+    </body>
+</html>
