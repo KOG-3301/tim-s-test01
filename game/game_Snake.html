@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <link href="./game_css/button_style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <button onclick="gameStart()">開始遊戲</button>
+        <h1 id="score_id">0</h1>
+        <canvas width="400" height="400" id="canvas_id"></canvas>
+        <script src="./game_JS_mood/gmae_Snake_tool_01.js"></script>
+        <table style="width:133px;height:133px;">
+            <tr>
+              <th></th>
+              <th><input type="button" value="上" name="按鈕名稱" style="width:130px;height:130px;" id="up" onclick="up()"></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td><input type="button" value="左" name="按鈕名稱" style="width:130px;height:130px;" id="left" onclick="left()"></td>
+              <td></td>
+              <td><input type="button" value="右" name="按鈕名稱" style="width:130px;height:130px;" id="right" onclick="right()"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="button" value="下" name="按鈕名稱" style="width:130px;height:130px;" id="down" onclick="down()"></td>
+              <td></td>
+            </tr>
+          </table>       
+        <hr>
+        <a href="../index.html">返回主頁面</a>
+    </body>
+
+</html>
