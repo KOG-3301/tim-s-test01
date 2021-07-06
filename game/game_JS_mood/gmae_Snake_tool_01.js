@@ -203,3 +203,4 @@ function down() {
         snack.direction.y =  1
       }
 }
+

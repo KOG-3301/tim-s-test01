@@ -5,10 +5,12 @@
     </head>
     <body>
         <button onclick="gameStart()">開始遊戲</button>
+        <a href="javascript:" onclick="document.all.fullContent.style.display=(document.all.fullContent.style.display=='none')?'':'none';document.all.smallContent.style.display=(document.all.smallContent.style.display=='none')?'':'none'">點我展開／隱藏方向鍵</a>
         <h1 id="score_id">0</h1>
         <canvas width="400" height="400" id="canvas_id"></canvas>
         <script src="./game_JS_mood/gmae_Snake_tool_01.js"></script>
-        <table style="width:133px;height:133px;">
+        <div class="block" id="fullContent" style="display:none;">
+          <table style="width:133px;height:133px;">
             <tr>
               <th></th>
               <th><input type="button" value="上" name="按鈕名稱" style="width:130px;height:130px;" id="up" onclick="up()"></th>
@@ -24,7 +26,8 @@
               <td><input type="button" value="下" name="按鈕名稱" style="width:130px;height:130px;" id="down" onclick="down()"></td>
               <td></td>
             </tr>
-          </table>       
+          </table>
+        </div>       
         <hr>
         <a href="../index.html">返回主頁面</a>
     </body>
