@@ -1,4 +1,4 @@
-ul {
+ul.tpye1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,11 +6,11 @@ ul {
     background-color: #333;
   }
   
-  li {
+  li.tpye1 {
     float: left;
   }
   
-  li a, .dropbtn {
+  li.tpye1 a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -18,7 +18,7 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover, .dropdown:hover .dropbtn {
+  li.tpye1 a:hover, .dropdown:hover .dropbtn {
     background-color: red;
   }
   
