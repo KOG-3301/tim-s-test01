@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html> 
+<head> 
+<title>Tetris</title> 
+<meta charset="UTF-8">
+<style> 
+*{
+font-family: "微軟雅黑";
+}
+.tetrisContainer{
+width: 230px;
+height: 400px;
+position: relative;
+left: 50%;
+margin-left: -115px;
+top: 40%;
+margin-top: -200px;
+}
+#area tr td{ 
+width: 20px; 
+height: 20px; 
+border:1px solid #ccc;
+} 
+</style> 
+</head> 
+<body> 
+<div class = "tetrisContainer">
+<input type="button" value="開始遊戲" onclick="begin(this);"/> 得分: <span id="score"> 0</span>
+<table id="area" cellspacing="0" cellpadding="0" border="1" style="border-collapse:collapse"><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+</div>
+</body> 
+<script type="text/javascript" src="game_JS_mood/game_tetris_tool.js"></script>
+</html> 
