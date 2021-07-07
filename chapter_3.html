@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筆記三</title>
+    <link href="./main_CSS/indeo_type.css" rel="stylesheet" type="text/css">
+    <script src="./main_JS_mood/main.js"></script>
+</head>
+
+<body>
+    <div id="home"><br/>
+        <hr>
+    </div>
+    <div class="navFixed">
+        <ul class="tpye1">
+            <li class="tpye1"><a href="./index.html">首頁</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">筆記</a>
+                <div class="dropdown-content">
+                    <a href="./chapter_1.html">筆記一</a>
+                    <a href="./chapter_2.html">筆記二</a>
+                    <a href="#" class="back-to-top">筆記三</a>
+                    <a href="./chapter_4.html">筆記四</a>
+                    <a href="./chapter_5.html">筆記五</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">小節</a>
+                <div class="dropdown-content">
+                    <a href="#" class="back-to-top">第一章</a>
+                    <a href="#two">第二章</a>
+                    <a href="#three">第三章</a>
+                    <a href="#four">第四章</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h1 style="text-align:center;">列表 & 表格</h1>
+    <div id="one"><br/>
+        <hr>
+    </div>
+    <h2>第一章 : 列表</h2>
+    <h2>&lt;ul&gt;&lt;/ul&gt; & &lt;ol&gt;&lt;\ol&gt;:排序</h2>
+    <h3>&lt;ul&gt;&lt;/ul&gt;:非數字排序</h3>
+    <ul style="color: darkorange;">
+        <li>google</li>
+        <li>youtube</li>
+        <li>露西亞</li>
+    </ul>
+    <h3>&lt;ol&gt;&lt;\ol&gt;:數字排序</h3>
+    <ol type="i" style="color: darkorange;">
+        <li>google</li>
+        <li>youtube</li>
+        <li>露西亞</li>
+    </ol>
+    <div id="two">
+        <br/>
+        <hr>
+    </div>
+    <h2>第二章 : 表格</h2>
+    <h3>&lt;table&gt;&lt;/table&gt;:表格</h3>
+    <h3>&lt;tr&gt;&lt;/tr&gt;:垂直數量</h3>
+    <h3>&lt;td&gt;&lt;/td&gt;:水平數量</h3>
+    <h3>※注意由外到內組成為:table > tr > td</h3>
+    <!--<table></table>:表格-->
+    <table width="400" style="color: aquamarine;background-color: black;">
+        <tr>
+            <td>偶像</td>
+            <td>人設</td>
+            <td>訂閱數</td>
+        </tr>
+        <tr>
+            <td>露西亞</td>
+            <td>可愛的病嬌</td>
+            <td>125萬</td>
+        </tr>
+    </table>
+    <div id="three">
+        <br/>
+        <hr>
+    </div>
+    <h2>第三章 : div應用"列表 & 表格"</h2>
+    <div style="color: darkorange;">
+        <ul>
+            <li>google</li>
+            <li>youtube</li>
+            <li>露西亞</li>
+        </ul>
+        <ol type="i">
+            <li>google</li>
+            <li>youtube</li>
+            <li>露西亞</li>
+        </ol>
+    </div>
+    <div style="color: darkorange;">
+        <table width="400" style="color: aquamarine;background-color: black;">
+            <tr>
+                <td>偶像</td>
+                <td>人設</td>
+                <td>訂閱數</td>
+            </tr>
+            <tr>
+                <td>露西亞</td>
+                <td>可愛的病嬌</td>
+                <td>125萬</td>
+            </tr>
+        </table>
+    </div>
+    <div id="four">
+        <br/>
+        <hr>
+    </div>
+    <h2>第四章 : 進階應用</h2>
+    <ol>
+        <li>
+            <table>
+                <h1>套餐選擇</h1>
+                <tr>
+                    <td><img src="https://b.share.photo.xuite.net/maomi/1b2de28/20555002/1240591406_o.jpg" style="height: 100px;width: 100px;"></td>
+                    <td><img src="https://www.gomaji.com/blog/wp-content/uploads/2020/06/celebrity-drink-banner-e1592459162312.jpg" style="height: 100px;width: 100px;"></td>
+                    <td><img src="https://cdn2.ettoday.net/images/3584/3584160.jpg" style="height: 100px;width: 100px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset style="height: 100px;width: 100px;">
+                            <legend>主餐:</legend>
+                            <form>
+                                <input type="radio" id="main01" name="main" value="滷肉飯">
+                                <label for="main01">滷肉飯</label><br>
+                                <input type="radio" id="main02" name="main" value="滷肉飯">
+                                <label for="main02">滷肉飯</label><br>
+                                <input type="radio" id="main03" name="main" value="牛肉麵">
+                                <label for="main03">牛肉麵</label>
+                            </form>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset style="height: 100px;width: 100px;">
+                            <legend>飲料:</legend>
+                            <form>
+                                <input type="checkbox" id="main01" name="main" value="滷肉飯">
+                                <label for="main01">紅茶</label><br>
+                                <input type="checkbox" id="main02" name="main" value="滷肉飯">
+                                <label for="main02">咖啡</label><br>
+                                <input type="checkbox" id="main03" name="main" value="牛肉麵">
+                                <label for="main03">抹茶</label>
+                            </form>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset style="height: 100px;width: 100px;">
+                            <legend>甜點:</legend>
+                            <form>
+                                <input type="checkbox" id="main01" name="main" value="滷肉飯">
+                                <label for="main01">馬卡龍</label><br>
+                                <input type="checkbox" id="main02" name="main" value="滷肉飯">
+                                <label for="main02">蛋糕</label><br>
+                                <input type="radio" id="main03" name="main" value="牛肉麵">
+                                <label for="checkbox">蛋塔</label>
+                            </form>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <h1>行政組織對照表</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div style="text-align:center;">
+                            <p>一級單位</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="text-align:center;">
+                            <p>二級單位</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="type1">教務處</td>
+                    <td id="type1">
+                        <div>
+                            <ul>
+                                <li>註冊課務組</li>
+                                <li>教學品保中心</li>
+                                <li>職涯展與校友中心</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="type1">學生事務處</td>
+                    <td>
+                        <div>
+                            <ul id="type1">
+                                <li>活動輔導組</li>
+                                <li>課外活動組</li>
+                                <li>衛生保健組</li>
+                                <li>諮詢中心</li>
+                                <li>軍訓室</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 總務處</td>
+                    <td>
+                        <div>
+                            <ul id="type1">
+                                <li>出納文書組</li>
+                                <li>保管事務組</li>
+                                <li>採購營繕組</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+</body>
+
+</html>

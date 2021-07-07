@@ -1,35 +1,61 @@
 <html>
 
-    <head>
-        <link href="./game_css/button_style.css" rel="stylesheet" type="text/css">
-        <script src="./game_JS_mood/gmae_Snake_tool_01.js"></script>
-    </head>
-    <body>
-        <button onclick="gameStart()">開始遊戲</button>
-        <a href="javascript:" onclick="document.all.fullContent.style.display=(document.all.fullContent.style.display=='none')?'':'none';document.all.smallContent.style.display=(document.all.smallContent.style.display=='none')?'':'none'">點我展開／隱藏方向鍵</a>
+<head>
+    <link href="./game_css/button_style.css" rel="stylesheet" type="text/css">
+    <script src="./game_JS_mood/gmae_Snake_tool_01.js"></script>
+    <title>js貪食蛇</title>
+    <link href="../main_CSS/indeo_type.css" rel="stylesheet" type="text/css">
+    <script src="../main_JS_mood/main.js"></script>
+</head>
+
+<body>
+    <div id="home"><br />
+        <hr>
+        <div class="navFixed">
+            <ul class="tpye1">
+                <li class="tpye1"><a href="./index.html">首頁</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">筆記</a>
+                    <div class="dropdown-content">
+                        <a href="./chapter_1.html">筆記一</a>
+                        <a href="./chapter_2.html">筆記二</a>
+                        <a href="./chapter_3.html">筆記三</a>
+                        <a href="#" class="back-to-top">筆記四</a>
+                        <a href="./chapter_5.html">筆記五</a>
+                    </div>
+                </li>
+                <li class="tpye1"><a href="../chapter_5.html">返回上一頁</a></li>
+            </ul>
+        </div>
+        <h1 style="text-align:center; ">JS貪食蛇遊戲</h1>
+        <div><br />
+            <hr>
+        </div>
+        <button class="button button5" onclick="gameStart()">開始遊戲</button>
+        <div><a href="javascript:" onclick="document.all.fullContent.style.display=(document.all.fullContent.style.display=='none')?'':'none';document.all.smallContent.style.display=(document.all.smallContent.style.display=='none')?'':'none'">點我展開／隱藏方向鍵</a></div>
         <h1 id="score_id">0</h1>
         <canvas width="400" height="400" id="canvas_id"></canvas>
         <div class="block" id="fullContent" style="display:none;">
-          <table style="width:133px;height:133px;">
-            <tr>
-              <th></th>
-              <th><input type="button" value="上" name="按鈕名稱" style="width:130px;height:130px;" id="up" onclick="up()"></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td><input type="button" value="左" name="按鈕名稱" style="width:130px;height:130px;" id="left" onclick="left()"></td>
-              <td></td>
-              <td><input type="button" value="右" name="按鈕名稱" style="width:130px;height:130px;" id="right" onclick="right()"></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><input type="button" value="下" name="按鈕名稱" style="width:130px;height:130px;" id="down" onclick="down()"></td>
-              <td></td>
-            </tr>
-          </table>
-        </div>       
+            <table style="width:133px;height:133px; ">
+                <tr>
+                    <th style="background-color:darkgray"></th>
+                    <th><input type="button" value="上" name="按鈕名稱" style="width:130px;height:130px;" id="up" onclick="up()"></th>
+                    <th style="background-color:darkgray"></th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="左" name="按鈕名稱" style="width:130px;height:130px;" id="left" onclick="left()"></td>
+                    <td style="background-color:darkgray"></td>
+                    <td><input type="button" value="右" name="按鈕名稱" style="width:130px;height:130px;" id="right" onclick="right()"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:darkgray"></td>
+                    <td><input type="button" value="下" name="按鈕名稱" style="width:130px;height:130px;" id="down" onclick="down()"></td>
+                    <td style="background-color:darkgray"></td>
+                </tr>
+            </table>
+        </div>
         <hr>
         <a href="../index.html">返回主頁面</a>
-    </body>
+</body>
 
 </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筆記四</title>
+    <link href="./main_CSS/indeo_type.css" rel="stylesheet" type="text/css">
+    <script src="./main_JS_mood/main.js"></script>
+</head>
+
+<body>
+    <div id="home"><br />
+        <hr>
+    </div>
+    <div class="navFixed">
+        <ul class="tpye1">
+            <li class="tpye1"><a href="./index.html">首頁</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">筆記</a>
+                <div class="dropdown-content">
+                    <a href="./chapter_1.html">筆記一</a>
+                    <a href="./chapter_2.html">筆記二</a>
+                    <a href="./chapter_3.html">筆記三</a>
+                    <a href="#" class="back-to-top">筆記四</a>
+                    <a href="./chapter_5.html">筆記五</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">小節</a>
+                <div class="dropdown-content">
+                    <a href="#" class="back-to-top">第一章</a>
+                    <a href="#two">第二章</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h1 style="text-align:center; ">HTML的容器 div & span & a </h1>
+    <div><br />
+        <hr>
+    </div>
+    <h2>第一章 : div排版</h2>
+    <h2>div可以很方便最網頁的美化和排版且方便使用CSS，如下方</h2>
+    <!--<div></div>:方便最網頁的美化和排版且方便使用CSS-->
+    <!--可以只用一行程式碼改變全部的樣式-->
+    <table>
+        <tr>
+            <td>
+                <h3 style="text-align:center; ">範例一: 兩欄式網頁排版</h3>
+            </td>
+            <td>
+                <h3 style="text-align:center; ">範例二: 三欄式網頁排版設計</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="width:360px;height:80px;text-align:center;line-height:80px;font-size:15px;color:#fffaf3;font-weight:bold;background-color:#f9c81e; ">
+                    Header 欄位</div>
+                <div style="width:120px;float:left;height:280px;text-align:center;line-height:280px;font-size:15px;color:#ffffff;font-weight:bold;background-color:#cecece; ">
+                    Sidebar</div>
+                <div style="width:240px;height:280px;text-align:center;line-height:280px;font-size:15px;color:#f9c81e;font-weight:bold;background-color:#fffaf3;float:left; ">
+                    Body 欄位</div>
+                <div style='clear:both;'></div>
+                <div style="width:360px;height:80px;text-align:center;line-height:80px;font-size:15px;color:#fffaf3;font-weight:bold;background-color:#f9c81e ">
+                    Footer 欄位</div>
+            </td>
+            <td>
+                <div id="sitebody">
+                    <div id="header">header</div>
+                    <div id="sidebar_left">sidebar_left</div>
+                    <div id="sidebar_right">sidebar_right</div>
+                    <div id="content1">content</div>
+                    <div id="footer">footer</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="two">
+        <br />
+        <hr>
+    </div>
+    <h2>第二章 : 測試範例 div 和 span 的差異</h2>
+    <table>
+        <tr>
+            <td>
+                <h3 style="text-align:center; ">&lt;a href="網址或資料位置"&gt;</h3>
+            </td>
+            <td>
+                可放入連結後，點即可進入該位置<br> e.g.
+                <br>
+                <a href="img/Rushia.2.0.01.jpg ">露西亞poke poke</a>
+                <a href="img/Rushia.2.0.01.jpg ">你不要命了....</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>測試範例 div 和 span 的差異</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3 style="text-align:center; ">span</h3>
+            </td>
+            <td>
+                空間有多少占多少<br> e.g.
+                <br>
+                <span>露西亞</span>
+                <span>最可愛~~~~</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3 style="text-align:center; ">div</h3>
+            </td>
+            <td>
+                不管寬度占一整行<br> e.g.
+                <br>
+                <div>露西亞</div>
+                <div>最可愛~~~~</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3 style="text-align:center; ">p</h3>
+            </td>
+            <td>
+                上下有空一行高的距離<br> e.g.
+                <br>
+                <p>露西亞</p>
+                <p>最可愛~~~~</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

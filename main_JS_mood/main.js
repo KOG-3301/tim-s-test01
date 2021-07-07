@@ -7,3 +7,10 @@ $(function() {
     }
   });
 });
+function copyFn(id){
+  var val = document.getElementById(id);
+  window.getSelection().selectAllChildren(val);
+  document.execCommand ("Copy");
+  window.getSelection().selectAllChildren(val);
+  alert("複製成功")
+  }

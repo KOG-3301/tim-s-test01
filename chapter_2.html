@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筆記二</title>
+    <link href="./main_CSS/indeo_type.css" rel="stylesheet" type="text/css">
+    <script src="./main_JS_mood/main.js"></script>
+</head>
+
+<body>
+    <div id="home"><br />
+        <hr>
+    </div>
+    <div class="navFixed">
+        <ul class="tpye1">
+            <li class="tpye1"><a href="./index.html">首頁</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">筆記</a>
+                <div class="dropdown-content">
+                    <a href="./chapter_1.html">筆記一</a>
+                    <a href="#" class="back-to-top">筆記二</a>
+                    <a href="./chapter_3.html">筆記三</a>
+                    <a href="./chapter_4.html">筆記四</a>
+                    <a href="./chapter_5.html">筆記五</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">小節</a>
+                <div class="dropdown-content">
+                    <a href="#one">第一章</a>
+                    <a href="#two">第二章</a>
+                    <a href="#three">第三章</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h1 style="text-align:center;">不同方式放置 圖片&影片</h1>
+    <div id="one"><br />
+        <hr>
+    </div>
+    <h2>第一章 : 圖片</h2>
+    <table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+        <tr>
+            <td>
+                <h3>內部資料夾擷取</h3>
+                <h4>語法:&lt;img src="資料位置" width="大小" height="大小"&gt;</h4>
+            </td>
+            <td>
+                <h3>網頁擷取</h3>
+                <h4>語法:&lt;img src="圖源網址" width="大小" height="大小"&gt;</h4>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/Rushia01.jpg" width="200" /></td>
+            <td><img src="https://i.imgur.com/jxkTnOI.jpeg" width="200" height="356" /></td>
+        </tr>
+    </table>
+    <div id="two"><br />
+        <hr>
+    </div>
+    <h2>第二章 : 影片</h2>
+    <table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+        <tr>
+            <td>
+                <h3>嵌入式系統_樹梅派防盜攝影機</h3><br>
+                <h3>內部資料夾擷取</h3>
+            </td>
+            <td>
+                <video src=".\video\嵌入式系統_防盜攝影機.mp4" controls width="400">影片無法撥放!!</video>
+                <h4>語法:&lt;video src="資料位置" controls(使影片可以撥放) width="大小"&gt;</h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>開掛的小廢物</h3>
+                <h3>外部資料夾擷取</h3>
+            </td>
+            <td>
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/1Ag-fJs4ubA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>影片無法撥放!!</iframe>
+                <h4>到YT影片的下方選擇->分享->嵌入->複製程式碼貼上即可</h4>
+            </td>
+        </tr>
+    </table>
+    <div id="three"><br />
+        <hr>
+    </div>
+    <h2>第三章 : 進階應用</h2>
+    <h3>CSS使用工具</h3>
+    <ol>
+        <li>height,width:調整圖片的長寬</li>
+        <li>background-color:設定背景色</li>
+        <li>background-image:選擇放入的圖片位置(scr="")</li>
+        <li>background-size:設定放入圖片的大小</li>
+        <li>background-position:設定背景圖片的初始位置</li>
+        <li></li>
+    </ol>
+    <table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+        <tr>
+            <td>
+                <h3>左下角邊緣塗滿圖片:</h3>
+                <div id="div1"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>四個邊緣塗滿圖片:</h3>
+                <div id="div2"></div>
+            </td>
+        </tr>
+    </table>
+    <br />
+</body>
+
+</html>
