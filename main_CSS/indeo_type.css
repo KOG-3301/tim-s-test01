@@ -21,7 +21,7 @@ li.tpye1 a,
 
 li.tpye1 a:hover,
 .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: rgb(153, 153, 153);
 }
 
 li.dropdown {
