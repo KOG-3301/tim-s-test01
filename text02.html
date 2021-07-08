@@ -1,164 +1,106 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <!-- v下一行 網頁的編碼-->
+    <!--<meta charset="UTF-8"></meta>=<meta charset="UTF-8"/><-->
+    <meta charset="UTF-8" />
+    <title>獄雨的網頁</title>
+    <link href="./main_CSS/indeo_type.css" rel="stylesheet" type="text/css">
+    <script src="./main_JS_mood/main.js"></script>
+</head>
 
 <body>
-
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-            <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
-            <!-- Float links to the right. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
-                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-            </div>
-        </div>
+    <div id="home"><br /></div>
+    <div class="navFixed">
+        <ul class="tpye1">
+            <li class="tpye1"><a href="#" class="back-to-top">首頁</a></li>
+            <li class="tpye1"><a href="./AboutMe.html">關於我</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">小節</a>
+                <div class="dropdown-content">
+                    <a href="#" class="back-to-top">第一章</a>
+                    <a href="#two">第二章</a>
+                    <a href="#three">第三章</a>
+                    <a href="#four">第四章</a>
+                    <a href="#five">第五章</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">筆記</a>
+                <div class="dropdown-content">
+                    <a href="./chapter_1.html">筆記一</a>
+                    <a href="./chapter_2.html">筆記二</a>
+                    <a href="./chapter_3.html">筆記三</a>
+                    <a href="./chapter_4.html">筆記四</a>
+                    <a href="./chapter_5.html">筆記五</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--我是註解-->
+    <h1>hello 我是獄雨</h1>
+    <h3>你好 我是網頁設計的初學者</h3>
+    <div class="div_type01 div_type02">
+        <div class="div_move_type01"><img src="img/Rimuru01.png" style="width: 100px;"></div>
     </div>
 
-    <!-- Header -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-        <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
-        <div class="w3-display-middle w3-margin-top w3-center">
-            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
-        </div>
-    </header>
-
-    <!-- Page content -->
-    <div class="w3-content w3-padding" style="max-width:1564px">
-
-        <!-- Project Section -->
-        <div class="w3-container w3-padding-32" id="projects">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-        </div>
-
-        <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="./img/Projects01.png" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                    <img src="./img/Projects01.png" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="./img/Projects01.png" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="./img/Projects01.png" alt="House" style="width:100%">
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-        </div>
-
-        <!-- About Section -->
-        <div class="w3-container w3-padding-32" id="about">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-
-        <div class="w3-row-padding w3-grayscale">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-                <h3>John Doe</h3>
-                <p class="w3-opacity">CEO & Founder</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-                <h3>Jane Doe</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-                <h3>Mike Ross</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-                <h3>Dan Star</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="w3-container w3-padding-32" id="contact">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-            <p>Lets get in touch and talk about your next project.</p>
-            <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-                <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-                <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-                <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-            </form>
-        </div>
-
-        <!-- Image of location/map -->
-        <div class="w3-container">
-            <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-        </div>
-
-        <!-- End page content -->
+    <div id="one"><br />
+        <hr>
     </div>
+    <h2>第一章</h2>
+    <p>本章我學習了<i><b> "輸入"、"分行"、"分線"、"字體改變:斜體 粗體"</b></i></p>
+    <p><b>(`・ω・´)b</b>　我把這部分的筆記放在筆記一，需要的人可以去那邊參考一下~</p>
+    <div id="two">
+        <!--中間想換可以使用<br></br> or </br>-->
+        <!--<br></br>:分行較大 or <br/>:分行較小-->
+        <br />
+        <!--中間隔開水平線 可以使用<hr></hr>-->
+        <!--<hr></hr>:分行較大 or <hr/>:分行較小-->
+        <hr>
+    </div>
+    <!--<img>:會放入一張圖片在網頁上 -->
+    <!--如果不需要強制改圖片大小 可以只輸入一邊的邊長 則圖片不會變形-->
+    <h2>第二章</h2>
+    <p>本章我學習了<i><b></b></i>放置"影片&照片"在網頁上&放置連結</p>
+    <p><b>(ゝ∀･)b</b>　我把這部分的筆記放在筆記二，需要的人可以去那邊參考一下~</p>
+    <p><b>ヽ(*´∀`)ﾉ</b>　示範人員是最可愛的"潤羽るしあ"</p>
+    <p>圖源連結:</p>
+    <ul>
+        <li>圖源一:
+            <p id="1">https://www.pinterest.com/nokhim53/%E3%82%8B%E3%81%97%E3%81%82/</p>
+        </li>
+        <li>圖源二:
+            <p id="2">https://i.imgur.com/jxkTnOI.jpeg</p>
+        </li>
+    </ul>
+    <input type="button" class="button button5" value="複製圖源一連結" onclick="copyFn('1')">
+    <input type="button" class="button button5" value="複製圖源二連結" onclick="copyFn('2')">
+    <div id="three">
+        <br />
+        <hr>
+    </div>
+    <h2>第三章</h2>
+    <p>本章我學習了<i><b></b></i>製作 列表 & 表格</p>
+    <p><b>( ﾟ∀ﾟ)σ</b>　我把這部分的筆記放在筆記三，需要的人可以去那邊參考一下~</p>
+    <!--https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ-->
+    <!--<ul><ul/> & <ol><ol/>:排序-->
+    <!--<ul><ul/>:非數字排序-->
+    <div id="four">
+        <br/>
+        <hr>
+    </div>
+    <h2>第四章</h2>
+    <p>本章我學習了<i><b></b></i> HTML的容器 div & span & a </p>
+    <p><b>(ゝ∀･)b</b>　我把這部分的筆記放在筆記四，需要的人可以去那邊參考一下~</p>
 
-
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-16">
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-    </footer>
-
+    <div id="five">
+        <br/>
+        <hr>
+    </div>
+    <h2>第五章</h2>
+    <p>本章我利用了<i><b></b></i> JS做了一些網頁小工具 </p>
+    <p><b>(っ´ω`c)</b>　我把這部分的成品放在筆記五，有興趣的話可以去使用看看~</p>
 </body>
 
 </html>

@@ -167,3 +167,32 @@ td {
     text-align: center;
     line-height: 80px;
 }
+
+.div_type01 {
+    width: 80%
+}
+
+.div_type02 {
+    border-style: solid;
+    border-style: 5px;
+}
+
+.div_move_type01 {}
+
+.div_type01:hover .div_move_type01 {
+    position: relative;
+    animation: TestMove 5s;
+    -moz-animation: TestMove 5s;
+    -webkit-animation: TestMove 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+@keyframes TestMove {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 80%;
+    }
+}

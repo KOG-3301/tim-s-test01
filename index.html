@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./main_CSS/w3.css">
+<link rel='stylesheet' href='./main_CSS/css.css'>
+<link rel="stylesheet" href="./main_CSS/font-awesome.min.css">
+<link href="./main_CSS/indeo_type.css" rel="stylesheet" type="text/css">
+<script src="./main_JS_mood/main.js"></script>
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Lato", sans-serif
+    }
+    
+    .mySlides {
+        display: none
+    }
+    
+    .w3-tag,
+    .fa {
+        cursor: pointer
+    }
+    
+    .w3-tag {
+        height: 15px;
+        width: 15px;
+        padding: 0;
+        margin-top: 6px
+    }
+</style>
 
-<head>
-    <!-- v下一行 網頁的編碼-->
-    <!--<meta charset="UTF-8"></meta>=<meta charset="UTF-8"/><-->
-    <meta charset="UTF-8" />
-    <title>獄雨的網頁</title>
-    <link href="./main_CSS/indeo_type.css" rel="stylesheet" type="text/css">
-    <script src="./main_JS_mood/main.js"></script>
-</head>
+<body onload="mToday()">
 
-<body>
-    <div id="home"><br /></div>
+    <!-- Links (sit on top) -->
+
+    <!-- Content -->
     <div class="navFixed">
         <ul class="tpye1">
             <li class="tpye1"><a href="#" class="back-to-top">首頁</a></li>
             <li class="tpye1"><a href="./AboutMe.html">關於我</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">小節</a>
-                <div class="dropdown-content">
-                    <a href="#" class="back-to-top">第一章</a>
-                    <a href="#two">第二章</a>
-                    <a href="#three">第三章</a>
-                    <a href="#four">第四章</a>
-                    <a href="#five">第五章</a>
-                </div>
-            </li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">筆記</a>
                 <div class="dropdown-content">
@@ -36,67 +54,286 @@
                     <a href="./chapter_5.html">筆記五</a>
                 </div>
             </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">小節</a>
+                <div class="dropdown-content">
+                    <a href="#" class="back-to-top">New Activity</a>
+                    <a href="#two">My wed note</a>
+                    <a href="#three">My Interest</a>
+                </div>
+            </li>
         </ul>
     </div>
-    <!--我是註解-->
-    <h1>hello 我是獄雨</h1>
-    <h3>你好 我是網頁設計的初學者(*ﾟ∀ﾟ*)/</h3>
-    <div id="one"><br />
-        <hr>
-    </div>
-    <h2>第一章</h2>
-    <p>本章我學習了<i><b> "輸入"、"分行"、"分線"、"字體改變:斜體 粗體"</b></i></p>
-    <p><b>(`・ω・´)b</b>　我把這部分的筆記放在筆記一，需要的人可以去那邊參考一下~</p>
-    <div id="two">
-        <!--中間想換可以使用<br></br> or </br>-->
-        <!--<br></br>:分行較大 or <br/>:分行較小-->
-        <br />
-        <!--中間隔開水平線 可以使用<hr></hr>-->
-        <!--<hr></hr>:分行較大 or <hr/>:分行較小-->
-        <hr>
-    </div>
-    <!--<img>:會放入一張圖片在網頁上 -->
-    <!--如果不需要強制改圖片大小 可以只輸入一邊的邊長 則圖片不會變形-->
-    <h2>第二章</h2>
-    <p>本章我學習了<i><b></b></i>放置"影片&照片"在網頁上&放置連結</p>
-    <p><b>(ゝ∀･)b</b>　我把這部分的筆記放在筆記二，需要的人可以去那邊參考一下~</p>
-    <p><b>ヽ(*´∀`)ﾉ</b>　示範人員是最可愛的"潤羽るしあ"</p>
-    <p>圖源連結:</p>
-    <ul>
-        <li>圖源一:
-            <p id="1">https://www.pinterest.com/nokhim53/%E3%82%8B%E3%81%97%E3%81%82/</p>
-        </li>
-        <li>圖源二:
-            <p id="2">https://i.imgur.com/jxkTnOI.jpeg</p>
-        </li>
-    </ul>
-    <input type="button" class="button button5" value="複製圖源一連結" onclick="copyFn('1')">
-    <input type="button" class="button button5" value="複製圖源二連結" onclick="copyFn('2')">
-    <div id="three">
-        <br />
-        <hr>
-    </div>
-    <h2>第三章</h2>
-    <p>本章我學習了<i><b></b></i>製作 列表 & 表格</p>
-    <p><b>( ﾟ∀ﾟ)σ</b>　我把這部分的筆記放在筆記三，需要的人可以去那邊參考一下~</p>
-    <!--https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ-->
-    <!--<ul><ul/> & <ol><ol/>:排序-->
-    <!--<ul><ul/>:非數字排序-->
-    <div id="four">
-        <br/>
-        <hr>
-    </div>
-    <h2>第四章</h2>
-    <p>本章我學習了<i><b></b></i> HTML的容器 div & span & a </p>
-    <p><b>(ゝ∀･)b</b>　我把這部分的筆記放在筆記四，需要的人可以去那邊參考一下~</p>
+    <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+        <div class="w3-panel">
+            <h1><b>獄雨's Web</b></h1>
+            <p>Template by w3.css</p>
+        </div>
 
-    <div id="five">
-        <br/>
+        <!-- Slideshow -->
+        <div class="w3-container">
+            <h1>New Activity:</h1>
+            <div class="w3-display-container mySlides">
+                <img src="./img/Topic_Strongbox.jpg" style="width:100%">
+                <div class="w3-display-topleft w3-container w3-padding-32">
+                    <span class="w3-white w3-padding-large w3-animate-bottom">Arduino Strongbox</span>
+                </div>
+            </div>
+            <div class="w3-display-container mySlides">
+                <img src="./img/Raspberry_Pi_face_recognition.png" style="width:100%">
+                <div class="w3-display-middle w3-container w3-padding-32">
+                    <span class="w3-white w3-padding-large w3-animate-bottom">Raspberry Pi3 b+ face recognition</span>
+                </div>
+            </div>
+            <div class="w3-display-container mySlides">
+                <img src="./img/UAV_identification.jpg" style="width:100%">
+                <div class="w3-display-topright w3-container w3-padding-32">
+                    <span class="w3-white w3-padding-large w3-animate-bottom">UAV identification</span>
+                </div>
+            </div>
+
+            <!-- Slideshow next/previous buttons -->
+            <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+                <div class="w3-left" onclick="plusDivs(-1)"><i class="fa w3-hover-text-teal"><img
+                            src="./img/left-button-icons.png" style="width: 40px;"></i></div>
+                <div class="w3-right" onclick="plusDivs(1)"><i class="fa w3-hover-text-teal"><img
+                            src="./img/right-button-icons.png" style="width: 40px;"></i></div>
+
+                <div class="w3-center">
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+        </div>
+        <br>
         <hr>
+        <h3><b>Hello,I am a beginner in web design.(*ﾟ∀ﾟ*)/</b></h3>
+        <h3><b>These are the notes from my webpage, I hope I can help you. d(`･∀･)b</b></h3>
+        <div id="two"><br />
+            <hr>
+        </div>
+        <!-- Grid -->
+        <div class="w3-row w3-container">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">My wed note:</span>
+            </div>
+            <div style="width:300px;height: 250px;" class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                <h3>Note1:</h3>
+                <p>
+                    <b>
+                        本章我學習了 "輸入"、"分行"、"分線"、"字體改變:斜體 粗體"<br>
+                        <hr style="background-color:rgb(12, 12, 12);height:1px; border:none;">
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        我把這部分的筆記放在筆記一，需要的人可以去那邊參考一下~<br>
+                        (`・ω・´)b
+                    </b>
+                </p>
+            </div>
+            <div style="width:300px;height: 250px;" class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                <h3>Note2:</h3>
+                <p>
+                    <b>
+                        本章我學習了 放置"影片&照片"在網頁上&放置連結<br>
+                        <hr>
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        我把這部分的筆記放在筆記二，需要的人可以去那邊參考一下~<br>
+                        (ゝ∀･)b
+                    </b>
+                </p>
+            </div>
+            <div style="width:300px;height: 250px;" class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+                <h3>Note3:</h3>
+                <p>
+                    <b>
+                        本章我學習了 製作"列表 & 表格"<br><br>
+                        <hr>
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        我把這部分的筆記放在筆記三，需要的人可以去那邊參考一下~<br>
+                        ( ﾟ∀ﾟ)σ
+                    </b>
+                </p>
+            </div>
+            <div style="width:300px;height: 250px;" class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+                <h3>Note4:</h3>
+                <p>
+                    <b>
+                        本章我學習了 HTML的容器:"div & span & a"<br>
+                        <hr>
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        我把這部分的筆記放在筆記四，需要的人可以去那邊參考一下~<br>
+                        o( ^ω^)o
+                    </b>
+                </p>
+            </div>
+            <div style="width:300px;height: 250px;" class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                <h3>Note5:</h3>
+                <p>
+                    <b>
+                        本章我利用了JS做了一些網頁小工具<br><br>
+                        <hr style="background-color:rgb(12, 12, 12);height:1px; border:none;">
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        我把這部分的成品放在筆記五，有興趣的話可以去使用看看~<br>
+                        (っ´ω`c)
+                    </b>
+                </p>
+            </div>
+            <div style="width:300px;height: 250px;" class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                <h3>Note2圖源:</h3>
+                <input type="button" class="button button5" value="複製圖源一連結" onclick="copyFn('1')">
+                <input type="button" class="button button5" value="複製圖源二連結" onclick="copyFn('2')">
+            </div>
+            <p style="color: white;" id="1">https://www.pinterest.com/nokhim53/%E3%82%8B%E3%81%97%E3%81%82/</p>
+            <p style="color: white;" id="2">https://i.imgur.com/jxkTnOI.jpeg</p>
+        </div>
+        <div id="three"><br />
+            <hr>
+        </div>
+        <!-- Grid -->
+        <div class="w3-row-padding" id="about">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">My Interest</span>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./img/AI-icons.png" alt="John" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Artificial Intelligenc</h3>
+                        <p class="w3-opacity">from: wiki</form>
+                        </p>
+                        <p>
+                            AI is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by h umans or animals. Leading AI textbooks define the field as the study of "intelligent agents": any system that perceive s its environment and takes actions
+                            that maximize its chance of achieving its goals.[a] Some popular accounts use the term "artificial intelligence" to describe machines that mimic "cognitive" functions that humans associate with the human mind, such as "learning"
+                            and "problem solving".
+                        </p>
+                        <p>
+                            <input class="w3-button w3-light-grey w3-block" type="button" onclick="javascript:location.href='https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD'" value="AI wiki"></input>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./img/iot-sensor-icons.png" alt="Mike" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Internet of Things</h3>
+                        <p class="w3-opacity">form: wiki</p>
+                        <p>
+                            The Internet of things (IoT) describes the network of physical objects—a.k.a. "things"—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.
+                            <br><br><br><br><br><br><br>
+                        </p>
+                        <p><input class="w3-button w3-light-grey w3-block" type="button" onclick="javascript:location.href='https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD'" value="IoT wiki"></input>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="./img/image_recognition_icon.png" alt="Jane" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Computer vision</h3>
+                        <p class="w3-opacity">from: wiki</p>
+                        <p>
+                            Computer vision is an interdisciplinary scientific field that deals with how computers can gain high-level understanding from digital images or videos. From the perspective of engineering, it seeks to understand and automate tasks that the human visual
+                            system can dodevelopment of international standards.
+                            <br><br><br><br><br><br>
+                        </p>
+                        <p><input class="w3-button w3-light-grey w3-block" type="button" onclick="javascript:location.href='https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89'" value="omputer vision wiki"></input>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
     </div>
-    <h2>第五章</h2>
-    <p>本章我利用了<i><b></b></i> JS做了一些網頁小工具 </p>
-    <p><b>(っ´ω`c)</b>　我把這部分的成品放在筆記五，有興趣的話可以去使用看看~</p>
+    <!-- Footer -->
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+
+        <p>Find me on social media.</p>
+        <i class="fa w3-hover-opacity"><a href="https://github.com/KOG-3301?tab=repositories"><img
+                    src="./img/github-icons.png" title="My github" style="width: 30px;"></a></i>
+        <i class="fa w3-hover-opacity"><a href="https://www.cjcu.edu.tw/"><img src="./img/school-icons.png"
+                    title="My school" style="width: 30px;"></a></i>
+        <p>更新日期: <span id="mday"></span></p>
+        <p>© 2021 獄雨 Goku ame Allright reserved.</p>
+    </footer>
+
+
+    <script>
+        // Slideshow
+        Today = new Date();
+
+        yy = Today.getFullYear();
+        mm = Today.getMonth() + 1;
+        dd = Today.getDate();
+        h = Today.getHours();
+        m = Today.getMinutes();
+        s = Today.getSeconds();
+
+        function myDate() {
+            document.getElementById("mToday").innerHTML = Today;
+        }
+
+        function mToday() {
+            document.getElementById("mday").innerHTML = yy + "年" + mm + "月" + dd + "日";
+        }
+
+        function mTime() {
+            document.getElementById("mT").innerHTML = h + ":" + m + ":" + s;
+        }
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demodots");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+
 </body>
 
 </html>
