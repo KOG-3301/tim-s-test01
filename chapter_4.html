@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>獄雨's 筆記四</title>
+    <link rel="stylesheet" href="./main_CSS/w3.css">
+    <link rel='stylesheet' href='./main_CSS/css.css'>
+    <link rel="stylesheet" href="./main_CSS/font-awesome.min.css">
     <link href="./main_CSS/indeo_type.css" rel="stylesheet" type="text/css">
     <script src="./main_JS_mood/main.js"></script>
 </head>
@@ -133,6 +136,53 @@
             </td>
         </tr>
     </table>
+    <!-- Footer -->
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+
+        <p>Find me on social media.</p>
+        <i class="fa w3-hover-opacity"><a href="https://github.com/KOG-3301?tab=repositories"><img
+                    src="./img/github-icons.png" title="My github" style="width: 30px;"></a></i>
+        <i class="fa w3-hover-opacity"><a href="https://www.cjcu.edu.tw/"><img src="./img/school-icons.png"
+                    title="My school" style="width: 30px;"></a></i>
+        <p>更新日期: <span id="mday"></span></p>
+        <p>© 2021 獄雨 Goku ame Allright reserved.</p>
+    </footer>
+
+
+    <script>
+        // Slideshow
+        Today = new Date();
+
+        yy = Today.getFullYear();
+        mm = Today.getMonth() + 1;
+        dd = Today.getDate();
+        h = Today.getHours();
+        m = Today.getMinutes();
+        s = Today.getSeconds();
+
+        function myDate() {
+            document.getElementById("mToday").innerHTML = Today;
+        }
+
+        function mToday() {
+            document.getElementById("mday").innerHTML = yy + "年" + mm + "月" + dd + "日";
+        }
+
+        function mTime() {
+            document.getElementById("mT").innerHTML = h + ":" + m + ":" + s;
+        }
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+    </script>
 </body>
 
 </html>

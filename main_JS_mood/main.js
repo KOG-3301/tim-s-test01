@@ -1,4 +1,6 @@
 var Today = new Date();
+
+
 $(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 495) { /* 要滑動到選單的距離 */
